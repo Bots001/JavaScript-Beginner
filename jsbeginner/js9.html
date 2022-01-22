@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <link href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <style type="text/css">
+        div#demo {
+
+            
+            
+
+
+            opacity: 1;
+            display: block;
+
+            transition: all 5s;
+        }
+
+        button {
+
+            padding: 10px;
+            margin: bottom;
+            border: none;
+            border-radius: 12;
+            background: rgb(10, 4, 83);
+            color: azure;
+
+        }
+
+        .ce{
+    
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="demo">
+        
+        
+    <img src="./Untitled3.png" alt="nothing">
+    <br>
+     
+    <div>
+        <button style="position:top;" onclick="fadeOut()">Fade Out</button>
+    </div>
+
+    <script>
+        function fadeOut() {
+            var elem = document.getElementById("demo");
+            elem.style.opacity = "0";
+            setTimeout(function () {
+                elem.style.opacity = "none";
+            }, 5000)
+        }
+    </script>
+
+
+
+<br>
+    <hr>
+    <a href="./js10.html" target="blank">Next Page</a>
+</body>
+
+</html>

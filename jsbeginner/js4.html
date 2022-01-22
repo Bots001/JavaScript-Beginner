@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>
+        JAVASCRIPT
+    </title>
+
+    <style type="text/css">
+        body {
+            text-align: center;
+            background: linear-gradient(to right, rgb(89, 80, 218), rgb(26, 24, 22))
+        }
+
+        button {
+
+            padding: 10px;
+            margin: 1;
+            border: none;
+            border-radius: 12;
+            background: blue;
+            color: azure;
+
+        }
+
+        a {
+            color: rgb(213, 241, 50);
+            font-weight: bold;
+        }
+
+        #demo{
+            font-weight:bold;
+            color: cornsilk;
+            font-size: larger;
+        }
+
+        #demo1{
+            font-weight: bold;
+            color: cornsilk;
+            font-size: larger;
+            
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="demo"></p><br>
+    <p id="demo1"></p>
+    <button type="button" onclick="myFunc()">Show sum</button>
+    <button type="button" onclick="myFunc1()">Show Product</button>
+
+    <script>
+
+    
+        var y=7; var x=7;
+        
+
+        function myFunc() {
+
+            var sum = x + y;
+
+
+
+
+            document.getElementById("demo").innerHTML = sum;
+
+        }
+
+        function myFunc1() {
+
+            var product = x * y;
+
+            document.getElementById("demo1").innerHTML = product;
+
+        }
+    </script>
+
+
+    <br>
+    <hr>
+
+    <footer><a href="./js5.html" target="blanck">Next Page</a></footer>
+</body>
+
+</html>

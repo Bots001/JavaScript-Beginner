@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            background: linear-gradient(to right, purple, red)
+        }
+        </style>
+
+</head>
+
+<body>
+    <p>Above 18 only allows to process the following files</p>
+    <form action="" onsubmit="return validateForm()">
+        <label>Age:<input type="text" name="age"></label>
+        <input type="submit">
+    </form>
+
+    <script>function validateForm() {
+            var age = document.getElementById("age");[0].value;
+            if (age < 18) {
+                alert("The age of the user is less than 18, form will not be submitted")
+                return false;
+            }
+        }</script>
+
+<br>
+<hr>
+
+<footer><a href="./js8.html" target="blanck">Next Page</a></footer>
+</body>
+
+</html>

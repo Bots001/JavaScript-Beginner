@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+            background: linear-gradient(to right, rgb(104, 200, 218), rgb(190, 117, 43))
+        }
+
+        button {
+
+            padding: 10px;
+            margin: 1;
+            border: none;
+            border-radius: 12;
+            background: rgb(10, 4, 83);
+            color: azure;
+
+        }
+
+        a {
+            color: rgb(65, 18, 18);
+            font-weight: bold;
+        }
+
+        #sal {
+            color: rgb(3, 3, 3);
+            text-shadow: black;
+            font-size: large;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p id="sal">Click this button before 5 seconds to stop the pop up dailog box for your page </p>
+    <button type="button" onclick="cancleTimeout()">Cancle Timeout</button>
+    <script>
+        var myTimeout = setTimeout(function () { alert("Hello user"); }, 5000)
+        function cancleTimeout() {
+            clearTimeout(myTimeout);
+            document.getElementById("sal").innerHTML = "<b>My Timeout,</b> has been cancelled, the pop up dialog will not appeare "
+        }
+    </script>
+
+<br>
+<hr>
+
+<footer><a href="./js6.html" target="blanck">Next Page</a></footer>
+</body>
+
+</html>

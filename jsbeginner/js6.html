@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <title>JAVASCRIPT</title>
+    <style>
+
+    body {
+        text-align: center;
+        background: linear-gradient(to right, rgb(151, 238, 93), rgb(152, 40, 218))
+    }
+
+    button {
+
+        padding: 10px;
+        margin: 1;
+        border: none;
+        border-radius: 12;
+        background: rgb(10, 4, 83);
+        color: azure;
+
+    }
+
+    a {
+        color: rgb(65, 18, 18);
+        font-weight: bold;
+    }
+
+    #sal {
+        color: rgb(3, 3, 3);
+        text-shadow: black;
+        font-size: large;
+    }
+
+    </style>
+    
+    
+
+</head>
+
+<body>
+    <p id="sal">1</p>
+    <button type="button" onclick="salmanInterval()">Stop Adding</button>
+    <script>
+        var x = 10;
+        var myInterval = setInterval(function () {
+            x += 10;
+            document.getElementById("sal").innerHTML = x;
+
+
+
+        }, 1000);
+
+        function salmanInterval(){
+            clearInterval(myInterval)
+        }
+    </script>
+
+<br>
+    <hr>
+
+    <footer><a href="./js7.html" target="blanck">Next Page</a></footer>
+</body>
+
+</html>

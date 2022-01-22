@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>javascript</title>
+    </head>
+    <body>
+        <p>App Code name:<span id="demo"></span></p>
+        <p>App Name:<span id="demo1"></span></p>
+        <p>User Agent: <span id="demo2"></span></p>
+        <p>Available vertical space of the screen:<span id="demo4"></span></p>
+        <p>Orientation of the screen:<span id="demo5"></span></p>
+        <p id="demo6"></p>
+        <script>
+            var width = window.innerWidth;
+            var height = window.innerHeight;
+            document.getElementById("demo6").innerHTML= "Width "+width + " Height "+height;
+            document.getElementById("demo").innerHTML =navigator.appCodeName        
+            document.getElementById("demo1").innerHTML =navigator.appName;
+            document.getElementById("demo3").innerHTML =navigator.userAgent;
+            document.getElementById("demo4").innerHTML =screen.availHeight;
+            document.getElementById("demo5").innerHTML=screen.orientation.type;
+            </script>
+    </body>
+</html>
